@@ -10,21 +10,23 @@ Definition
 
 Example:
 
-    qx.Mixin.define("name",
-    {
-      include: [SuperMixins],
+```javascript
+qx.Mixin.define("name",
+{
+  include: [SuperMixins],
 
-      properties: {
-        "tabIndex": {check: "Number", init: -1}
-      },
+  properties: {
+    "tabIndex": {check: "Number", init: -1}
+  },
 
-      members:
-      {
-        prop1: "foo",
-        meth1: function() {},
-        meth2: function() {}
-      }
-    });
+  members:
+  {
+    prop1: "foo",
+    meth1: function() {},
+    meth2: function() {}
+  }
+});
+```
 
 Usage
 -----
