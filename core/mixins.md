@@ -35,74 +35,82 @@ Here a short example to see, how to use mixins (`MMixinA`, `MMixinB`) with a cla
 
 The first mixin:
 
-    qx.Mixin.define("demo.MMixinA",
+```javascript
+qx.Mixin.define("demo.MMixinA",
+{
+  properties: {
+    "propertyA": 
     {
-      properties: {
-        "propertyA": 
-        {
-          check: "String", 
-          init: "Hello, I'm property A!\n"
-        }
-      },
+      check: "String", 
+      init: "Hello, I'm property A!\n"
+    }
+  },
 
-      members:
-      {
-        methodA: function() {
-          return "Hello, I'm method A!\n";    
-        }
-      }
-    });
+  members:
+  {
+    methodA: function() {
+      return "Hello, I'm method A!\n";    
+    }
+  }
+});
+```
 
 The second mixin:
 
-    qx.Mixin.define("demo.MMixinB",
+```javascript
+qx.Mixin.define("demo.MMixinB",
+{
+  properties: {
+    "propertyB": 
     {
-      properties: {
-        "propertyB": 
-        {
-          check: "String", 
-          init: "Hello, I'm property B!\n"
-        }
-      },
+      check: "String", 
+      init: "Hello, I'm property B!\n"
+    }
+  },
 
-      members:
-      {
-        methodB: function() {
-          return "Hello, I'm method B!\n";    
-        }
-      }
-    });
+  members:
+  {
+    methodB: function() {
+      return "Hello, I'm method B!\n";    
+    }
+  }
+});
+```
 
 The usage in the class:
 
-    qx.Class.define("demo.ClassC", 
-    {
-      extend : qx.core.Object,
+```javascript
+qx.Class.define("demo.ClassC", 
+{
+  extend : qx.core.Object,
 
-      include : [demo1.MMixinA, demo1.MMixinB],
+  include : [demo1.MMixinA, demo1.MMixinB],
 
-      members :
-      {
-        methodC : function() {
-          return this.getPropertyA() + this.methodA() 
-            + this.getPropertyB() + this.methodB()
-            + "Nice to meet you. Thanks for your help!";
-        }
-      }
-    });
+  members :
+  {
+    methodC : function() {
+      return this.getPropertyA() + this.methodA() 
+        + this.getPropertyB() + this.methodB()
+        + "Nice to meet you. Thanks for your help!";
+    }
+  }
+});
+```
 
 The result is when calling the method `methodC()` of `ClassC`:
 
-    var classC = new demo.ClassC;
-    var result = classC .methodC();
-    /*
-     * Result:
-     * Hello, I'm property A! 
-     * Hello, I'm method A! 
-     * Hello, I'm property B! 
-     * Hello, I'm method B! 
-     * Nice to meet you. Thanks for your help!
-     */
+```javascript
+var classC = new demo.ClassC;
+var result = classC .methodC();
+/*
+ * Result:
+ * Hello, I'm property A! 
+ * Hello, I'm method A! 
+ * Hello, I'm property B! 
+ * Hello, I'm method B! 
+ * Nice to meet you. Thanks for your help!
+ */
+```
 
 Summary
 -------
