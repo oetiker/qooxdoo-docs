@@ -17,7 +17,12 @@
       loadSidebar: true,
       subMaxLevel: 2,
       namespace: 'qx-manual',
-      relativePath: true
+      relativePath: true,
+      plugins: [
+        EditOnGithubPlugin.create(
+          'https://github.com/oetiker/qooxdoo-docu',
+        )
+      ]
     }
   </script>
   <script src="//unpkg.com/docsify@4.9.2/lib/docsify.js"></script>
