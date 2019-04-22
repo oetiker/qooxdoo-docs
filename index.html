@@ -12,13 +12,14 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
-     name: 'qooxdoo-sdk',
+      name: 'qooxdoo-sdk',
       repo: 'https://github.com/oetiker/qooxdoo-docu',
       loadSidebar: true,
       subMaxLevel: 2,
       namespace: 'qx-manual',
       relativePath: true,
-      function (hook, vm) {
+      plugins: [
+        function (hook, vm) {
           hook.beforeEach(function (html) {
             if (/githubusercontent\.com/.test(vm.route.file)) {
               url = vm.route.file
@@ -35,6 +36,7 @@
               // text-decoration: none;">Powered by docsify</a>'
           })
         }
+      ]
     }
   </script>
   <script src="//unpkg.com/docsify@4.9.2/lib/docsify.js"></script>
