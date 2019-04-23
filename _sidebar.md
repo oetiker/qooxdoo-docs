@@ -12,7 +12,7 @@
   - [Overview](/core/property_features.md)
   - [Introduction](/core/understanding_properties.md)
   - [Setup](/core/defining_properties.md)
-  - [Initialization](/core/property_behaviors.md)
+  - [Initialization](/core/property_behavior.md)
 - [Environments](/core/environment.md)
 - [Data Binding](/data_binding.md)
   - [Introduction](/data_binding/)
