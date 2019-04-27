@@ -1,3 +1,4 @@
+- [Getting Started](/)
 - Introduction
   - [About](/introduction/about.md)
   - [Feature Overview](/introduction/features.md)

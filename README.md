@@ -1,100 +1,51 @@
-qooxdoo Manual
-==========================
+# Getting Started
 
-Welcome to the manual of qooxdoo.
+Welcome to Qooxdoo! Qooxdoo is a one-stop javascript framework that helps you write single page web applications in pure JavaScript without touching HTML or CSS.
 
-The table below provides some entry points to the documentation of components such as *Core*, *Website*, *Desktop*, *Mobile*, *Server* or *Tooling*.
+Qooxdoo applications are written in javascript. The qooxdoo framework is a large, well structured class library composed from both graphical and non graphical element you can use to build your applications. The following guide will show how this works in practice.
 
-For a full overview proceed to the table of contents \<toc\>.
+This guide takes less than 10 minutes to complete.
 
-<table>
-<col width="11%" />
-<col width="88%" />
-<tbody>
-<tr class="odd">
-<td align="left"><img src="_static/getting-started.png" alt="started" /></td>
-<td align="left"><dl>
-<dt><strong>
+## Installation
 
-  [Getting Started](getting_started.md)
+Before you can load a qooxdoo application in your browser, it has to be compiled. The compilation step takes care including all the qooxdoo classes into your application that were referenced either directly or indirectly from your code.
 
-</strong></dt>
-</dl></td>
-</tr>
-<tr class="even">
-<td align="left"><img src="_static/core.png" alt="core" /></td>
-<td align="left"><dl>
-<dt><strong>Core</strong></dt>
-<dd>
+The qooxdoo compiler is called `qx` and runs in nodes.js. Qooxdoo requires Node.js version 8.x or 10.x. to work.
 
-* [Classes](/core/oo_introduction.md)
-* [Properties](/core/understanding_properties.md)
-* [Data Binding](/data_binding/data_binding.md)
-* [Environment](/core/environment.md)</li>
+To check your version, run `node -v` in a terminal/console window.
 
-</dd>
-</dl></td>
-</tr>
-<tr class="odd">
-<td align="left"><img src="_static/desktop.png" alt="desktop" /></td>
-<td align="left"><dl>
-<dt><strong>Desktop</strong></dt>
-<dd>
+If you don't have node installed, or your version is too old, either go to [nodejs.org](https://nodejs.org) or use the [nvm system](https://github.com/nvm-sh/nvm) to get up and running.
 
-* [Introduction](/desktop/ui_overview.md)
-* [Tutorial](/desktop/tutorials/tutorial-part-1.md)
-* [Reference](/desktop/ui_widgets.md)
+Node comes with its own package manager called npm which you can now use to install the qooxdoo framework and the qooxdoo compiler. There are two ways to setup qooxdoo. You can install it in the same directory as your qooxdoo project or you can install it globally.
 
-</dd>
-</dl></td>
-</tr>
-<tr class="even">
-<td align="left"><img src="_static/mobile.png" alt="mobile" /></td>
-<td align="left"><dl>
-<dt><strong>Mobile</strong></dt>
-<dd>
+### Global installation
 
-* [Introduction](/mobile/mobile_overview.md)
-* [Tutorial](/mobile/tutorial.md)
+The following command line installs the qooxdoo compiler so that it becomes available via your path settings.
 
-</dd>
-</dl></td>
-</tr>
-<tr class="odd">
-<td align="left"><img src="_static/website.png" alt="website" /></td>
-<td align="left"><dl>
-<dt><strong>Website</strong></dt>
-<dd>
+```console
+$ npm install -g @qooxdoo/compiler @qooxdoo/framework
+```
 
-* [Introduction](/website/overview.md)
-* [Tutorial](/website/tutorial_web_developers.md)
+To start the qooxdoo compiler type
 
-</dd>
-</dl></td>
-</tr>
-<tr class="even">
-<td align="left"><img src="_static/server.png" alt="server" /></td>
-<td align="left"><dl>
-<dt><strong>Server</strong></dt>
-<dd>
+```console
+$ qx
+```
 
-* [Introduction](/server/overview.md)
+### Local Installation
 
-</dd>
-</dl></td>
-</tr>
-<tr class="odd">
-<td align="left"><img src="_static/tooling.png" alt="tooling" /></td>
-<td align="left"><dl>
-<dt><strong>Tooling</strong></dt>
-<dd>
+Both the compiler and the qooxdoo framework are evolving, so if you are writing a large application which you may have to maintain for months and years to come, you will probably be better of to install qooxdoo together with the application code.
 
-* [Introduction](/tool.md)
-* [Tutorial](/getting_started/helloworld.md)
-* [Reference](references.md)
+```console
+$ mkdir myapp
+$ cd myapp
+$ npm install --save-dev @qooxdoo/compiler @qooxdoo/framework
+```
 
-</dd>
-</dl></td>
-</tr>
-</tbody>
-</table>
+To start the qooxdoo compiler type
+
+```console
+$ npx qx
+```
+
+Looking at the myapp directory you find two files: `package.json` and `package-lock.json` as well as a folder `node_modules`. Add the `package.json` and `package-lock.json` to your project files. This will allow you later to re-install the exact same version of the compiler and of the framework by typing `npm i` without the need to keep a copy of the `node_modules` folder around.
