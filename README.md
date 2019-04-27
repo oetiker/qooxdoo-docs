@@ -22,13 +22,13 @@ Node comes with its own package manager called npm which you can now use to inst
 
 The following command line installs the qooxdoo compiler so that it becomes available via your path settings.
 
-```console
+```bash
 $ npm install -g @qooxdoo/compiler @qooxdoo/framework
 ```
 
 To start the qooxdoo compiler type
 
-```console
+```bash
 $ qx
 ```
 
@@ -36,15 +36,18 @@ $ qx
 
 Both the compiler and the qooxdoo framework are evolving, so if you are writing a large application which you may have to maintain for months and years to come, you will probably be better of to install qooxdoo together with the application code.
 
-```console
+```bash
 $ mkdir myapp
 $ cd myapp
+$ npm init
 $ npm install --save-dev @qooxdoo/compiler @qooxdoo/framework
+$ ls
+node_modules      package-lock.json package.json
 ```
 
 To start the qooxdoo compiler type
 
-```console
+```bash
 $ npx qx
 ```
 
