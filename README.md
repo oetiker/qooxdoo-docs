@@ -90,14 +90,14 @@ qx.Class.define("myapp.Application", {
 });
 ```
 
-If you know a bit about class based object oriented programming you should feel right at home when looking at this code. If you have worked with javascript before you may find that it looks like javascript but also different from most javascript you have seen to date. This is because qooxdoo introduces both a rich set of widgets as well as class based object orientation into the language. If you have worked with java before you may find quite at home, also people who know about Qt will recognize many concepts. If you don't know either, this is no problem, you will get along just fine with our documentation.
+If you have worked with javascript before you may find that it looks like javascript but also different from most javascript you have seen to date. This is because qooxdoo introduces both a rich set of widgets as well as class based object orientation into the language. There is quote a lot of documentation on these toppics in the next few sections.
 
 And yes, this is the complete program, there is neither HTML nor CSS. The qooxdoo framework creates all that on the fly as the program is started. There is also a powerful theming system which lets you write your own themes to give your application a distinctive look.
 
-Try now editing the file a bit. You will see that the server detects your modifications and recompiles the application automatically.
+Try editing the file a bit. You will notice that the server detects your modifications and recompiles the application automatically.
 
 ## Reading on
 
-With the first mini application up and running you are now ready for bigger things. You can either start reading the theory parts of the documentation where we explore in detail how the qooxdoo class system works or you can try some more hands on by working through the tutorial.
+With the first mini application up and running you are now ready for bigger things. You can either start reading the theory parts of the documentation where we explore in detail how the qooxdoo class system works or you can try some more hands-on by working through the tutorial.
 
 If you ever get stuck, feel free to open the chat window by pressing the button in the bottom right hand corner of the documentation.
