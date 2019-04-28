@@ -59,7 +59,7 @@ The qooxdoo compiler is not only a compiler. It can also provide little template
 
 ```bash
 $ cd myapp
-$ npx qx create myapp -t desktop -I -o .
+$ npx qx create myapp --type desktop --noninteractive --out .
 $ npx qx serve
 ```
 
