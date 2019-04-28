@@ -53,6 +53,8 @@ $ npx qx
 
 Looking at the myapp directory you find two files: `package.json` and `package-lock.json` as well as a folder `node_modules`. Add the `package.json` and `package-lock.json` to your project files. This will allow you later to re-install the exact same version of the compiler and of the framework by typing `npm i` without the need to keep a copy of the `node_modules` folder around.
 
+!> Save some keystrokes by setting an alias for `qx` by setting `alias qx='npx qx'`!
+
 ## The First Application
 
 The qooxdoo compiler is not only a compiler. It can also provide little template apps and it can act as a webserver so that you can use your browser to access the application. To get started, lets create a little application and then have a look at its code. The `create` command in the qooxdoo compiler lets you quickly produce a simple skeleton app. The following command line assumes that you have setup a local copy of the qooxdoo compiler in the myapp subdirectory.
@@ -62,6 +64,8 @@ $ cd myapp
 $ npx qx create myapp --type desktop --noninteractive --out=.
 $ npx qx serve
 ```
+
+
 
 The `serve` command will compile the application and then also make it available on localhost. Use your web browser to open <http://localhost:8080>.
 
