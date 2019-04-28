@@ -14,7 +14,8 @@
   - Annotations (tbd)
   - Testing (tbd)
   - Theming (tbd)
-  - API Documentation (tbd)
+  - Writing a backend (tbd)
+  - Deployment (tbd)
 
 - Tools
   - The Qooxdoo Compiler (tbd)
