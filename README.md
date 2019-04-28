@@ -63,7 +63,7 @@ $ npx qx create myapp --type desktop --noninteractive --out .
 $ npx qx serve
 ```
 
-The serve command will compile the application and then also make it available on localhost. Use your web browser to open <http://localhost:8080>.
+The `serve` command will compile the application and then also make it available on localhost. Use your web browser to open <http://localhost:8080>.
 
 ## The Qooxdoo Way
 
