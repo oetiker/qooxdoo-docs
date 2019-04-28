@@ -6,7 +6,7 @@
 - Tutorials
   - Twitter App  (tbd)
 
-- Qooxdoo JavaScript
+- Qooxdoo Framework
   - Class based OO (tbd)
   - Setters and Getters (tbd)
   - Promises (tbd)
@@ -17,7 +17,7 @@
   - Writing a backend (tbd)
   - Deployment (tbd)
 
-- Tools
+- Qooxdoo Tools
   - The Qooxdoo Compiler (tbd)
   - API Reference (tbd)
   - Demo Browser (tbd)
