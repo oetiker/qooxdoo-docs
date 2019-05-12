@@ -1,6 +1,6 @@
 - Introduction
   - [Getting Started](/)
-  - About Qooxdoo (tbd)
+  - [About Qooxdoo](/about.md)
   - About Us (tbd)
 
 - Tutorials
