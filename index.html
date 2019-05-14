@@ -33,6 +33,7 @@
             var editHtml = '[:memo: Edit Document](' + url + ')\n'
             return editHtml
               + html.replace("%{version}","devel")
+              .replace("%{release_tag}","master")
           })
         }
       ]

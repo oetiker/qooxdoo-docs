@@ -3,7 +3,6 @@ About
 
 qooxdoo (pronounced ['kuksdu:]) is a universal JavaScript framework for creating enterprise grade single page web applications. With its class based objectorientation  qooxdoo allows to keep even the code of the most complex applications well organized and manageable. The integrated compiler produces single file applications ready for deployment.
 
-qooxdoo was originally developed by one of the world's leading web hosters 1&1 Internet (now part United Internet AG). In late 2015 the qooxdoo framework with all its assets was turned over to the qooxdoo association, located in Switzerland. Qooxdoo development has since then been lead by a group of dedicated developers congregating on [gitter](https://gitter.im/qooxdoo/qooxdoo) and [github](https://github.com/qooxdoo/qooxdoo). Contributions are always welcome.
 
 Framework
 ---------
@@ -25,3 +24,16 @@ Communication
 -------------
 
 While being a client-side and server-agnostic solution, the qooxdoo project includes different communication facilities, and supports low-level XMLHttpRequests (XHR) as well as an RPC API. An abstract transport layer supports queues, timeouts and implementations via XHR, Iframes and Scripts. Like the rest of qooxdoo it fully supports event-based programming which greatly simplifies asynchronous communication.
+
+
+qooxdoo was originally developed by one of the world's leading web hosters 1&1 Internet (now part United Internet AG). In late 2015 the qooxdoo framework with all its assets was turned over to the qooxdoo association, located in Switzerland. Qooxdoo development has since then been lead by a group of dedicated developers congregating on [gitter](https://gitter.im/qooxdoo/qooxdoo) and [github](https://github.com/qooxdoo/qooxdoo). Contributions are always welcome.
+
+Contact
+-------
+
+qooxdoo.org<br/>
+Aargweg 17<br/>
+4600 Olten<br/>
+Switzerland
+
+<info@qooxdoo.org>
