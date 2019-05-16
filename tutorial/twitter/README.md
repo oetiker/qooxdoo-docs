@@ -1,8 +1,5 @@
 Tutorial: Tweets App
-==============================================
-
-Introduction
-------------
+======================
 
 This tutorial covers many practical aspects of developing desktop-like qooxdoo apps.
 
