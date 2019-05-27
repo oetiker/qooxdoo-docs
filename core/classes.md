@@ -306,13 +306,3 @@ qx.Class.define("qx.test.Cat", {
   include : [qx.test.MPet, qx.test.MSleep]
 });
 ```
-
-Summary
--------
-
-### Configuration
-
-### References
-
--   [a quick syntax overview](class_quickref.md)
--   [API Documentation for Class](http://demo.qooxdoo.org/%{version}/apiviewer/#qx.Class)

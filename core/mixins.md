@@ -39,9 +39,9 @@ The first mixin:
 qx.Mixin.define("demo.MMixinA",
 {
   properties: {
-    "propertyA": 
+    "propertyA":
     {
-      check: "String", 
+      check: "String",
       init: "Hello, I'm property A!\n"
     }
   },
@@ -49,7 +49,7 @@ qx.Mixin.define("demo.MMixinA",
   members:
   {
     methodA: function() {
-      return "Hello, I'm method A!\n";    
+      return "Hello, I'm method A!\n";
     }
   }
 });
@@ -61,9 +61,9 @@ The second mixin:
 qx.Mixin.define("demo.MMixinB",
 {
   properties: {
-    "propertyB": 
+    "propertyB":
     {
-      check: "String", 
+      check: "String",
       init: "Hello, I'm property B!\n"
     }
   },
@@ -71,7 +71,7 @@ qx.Mixin.define("demo.MMixinB",
   members:
   {
     methodB: function() {
-      return "Hello, I'm method B!\n";    
+      return "Hello, I'm method B!\n";
     }
   }
 });
@@ -80,7 +80,7 @@ qx.Mixin.define("demo.MMixinB",
 The usage in the class:
 
 ```javascript
-qx.Class.define("demo.ClassC", 
+qx.Class.define("demo.ClassC",
 {
   extend : qx.core.Object,
 
@@ -89,7 +89,7 @@ qx.Class.define("demo.ClassC",
   members :
   {
     methodC : function() {
-      return this.getPropertyA() + this.methodA() 
+      return this.getPropertyA() + this.methodA()
         + this.getPropertyB() + this.methodB()
         + "Nice to meet you. Thanks for your help!";
     }
@@ -104,21 +104,10 @@ var classC = new demo.ClassC;
 var result = classC .methodC();
 /*
  * Result:
- * Hello, I'm property A! 
- * Hello, I'm method A! 
- * Hello, I'm property B! 
- * Hello, I'm method B! 
+ * Hello, I'm property A!
+ * Hello, I'm method A!
+ * Hello, I'm property B!
+ * Hello, I'm method B!
  * Nice to meet you. Thanks for your help!
  */
 ```
-
-Summary
--------
-
-### Configuration
-
-### References
-
--   mixin\_quickref - a quick syntax reference for mixins
--   [API Documentation for Mixin](http://demo.qooxdoo.org/%{version}/apiviewer/#qx.Mixin)
-
